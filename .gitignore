@@ -1,0 +1,201 @@
+## Ignore Visual Studio temporary files, build results, and
+## common Node.js files.
+## 
+## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono)
+monodevelop-workspace.xml
+
+# User-specific files (VSCode)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vscode-test
+
+# User-specific files (ReSharper)
+_ReSharper*/
+*.DotSettings.user
+
+# User-specific files (JustCode)
+*.JustCode
+
+# User-specific files (Project Rider)
+.idea/
+*.sln.iml
+
+# Mono auto generated files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.vscode-test/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Visual Studio 2019
+.vs2019/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# Publish results
+[Pp]ublish/
+[Pp]ublished[Ww]ebsites/
+
+# Uncomment if you have dependencies that are placed in a libraries directory
+#lib/
+
+# Node modules
+node_modules/
+jspm_packages/
+
+# Visual Studio Online Build and Package Team Services directories
+packages/
+[Tt]emp/
+[Tt]mp/
+
+# Resharper settings
+_ReSharper*/
+*.DotSettings.user
+
+# Resharper 8.0+
+SolutionName.sln.DotSettings
+
+# DotCover is a unit test code coverage tool
+*.dotCover
+
+# Assembly binding log
+*.dll.log
+
+# Stylizer is an automatic code cleanup tool
+*.styz
+
+# Telerik's JustCode settings file
+*.jcf
+
+# TeamCity
+_TeamCity
+
+# DotTrace profiler
+*.dotTrace
+
+# Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/
+
+# Roslyn
+*.Compiler*
+
+# NCrunch
+*_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_
+
+# User-specific files (VSCode)
+.vscode/*
+
+# Local History for Visual Studio
+.localhistory
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build results
+build/
+
+# VIM
+*.swp
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Visual Studio 2019
+.vs2019/
+
+# VS Code directories
+.vscode/
+.vscode-test/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Publish results
+[Pp]ublish/
+[Pp]ublished[Ww]ebsites/
+
+# Build results
+build/
+
+# NPM package dependencies
+node_modules/
+
+# Yarn package dependencies
+.yarn/
+.pnp.*
