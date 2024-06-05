@@ -9,7 +9,7 @@ public class UsuarioService
     {
         _connection = connection;
     }
-    public bool BuscaUsuarioLogin(string userName, string senha)
+    public bool BuscarUsuarioLogin(string userName, string senha)
     {
         string query = "SELECT COUNT(*) FROM USUARIO WHERE userName = '" + userName + "' AND senha = '" + senha + "' ";
 

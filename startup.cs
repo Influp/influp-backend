@@ -11,22 +11,23 @@ public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddControllers();
         services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
         });
+
         string connectionString = "Server=localhost;Database=influp;Uid=root;Pwd=admin;";
         services.AddTransient<IDbConnection>((sp) => new MySqlConnection(connectionString));
+
         services.AddScoped<UsuarioService>();
+        services.AddScoped<AdmService>();
+        services.AddControllers();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
         {
-
-
             app.UseDeveloperExceptionPage();
         }
 

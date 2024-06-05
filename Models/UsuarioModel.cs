@@ -9,7 +9,7 @@ public abstract class Usuario
     public string Nome { get; set; }
     public DateTime Nascimento { get; set; }
     public Usuario() { }
-    protected Usuario(int idUsuario, string username, string senha, string email,string nome, DateTime nascimento)
+    public Usuario(int idUsuario, string username, string senha, string email,string nome, DateTime nascimento)
     {
         IdUsuario = idUsuario;
         Username = username;

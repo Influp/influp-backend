@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AuthController : ControllerBase
+public class UsuarioController : ControllerBase
 {
     private readonly UsuarioService _usuarioService;
 
-    public AuthController(UsuarioService usuarioService)
+    public UsuarioController(UsuarioService usuarioService)
     {
         _usuarioService = usuarioService;
     }
@@ -19,7 +19,7 @@ public class AuthController : ControllerBase
     public IActionResult Login([FromBody] UsuarioConcreto usuario)
     {
 
-        if (_usuarioService.BuscaUsuarioLogin(usuario.Username, usuario.Senha))
+        if (_usuarioService.BuscarUsuarioLogin(usuario.Username, usuario.Senha))
         {
             return Ok(new { Token = "fake-jwt-token" });
         }
