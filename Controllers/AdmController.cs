@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -13,12 +14,28 @@ public class AdmController : ControllerBase
     }
 
 
-    [HttpGet("buscarUsuarios")]
-    public List<Influenciador> ListarTodosInfluenciadores(){
+    [HttpGet("buscarInfluenciadores")]
+    public List<InfluenciadorDTO> ListarTodosInfluenciadores(){
         
         var influenciadores = _admService.ListarTodosInfluenciadores();
         
         return influenciadores;
+    }
+
+    [HttpGet("buscarInfluenciadoresPorNome")]
+    public List<InfluenciadorDTO> ListarInfluenciadorPorNome (String nome){
+        var influenciadores = _admService.ListarInfluenciadoresPorNome(nome);
+
+        return influenciadores;
+    }
+
+    [HttpPost("cadastrarInfluenciador")]
+    public IActionResult CadastrarInfluenciador([FromBody] InfluenciadorDTO influenciador)
+    {
+
+        _admService.CadastrarInfluenciador(influenciador);
+
+        return Created("", influenciador);
     }
 
 }

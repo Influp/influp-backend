@@ -13,7 +13,7 @@ public class Startup
     {
         services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Influp REST API", Version = "v1" });
         });
 
         string connectionString = "Server=localhost;Database=influp;Uid=root;Pwd=admin;";
@@ -43,7 +43,7 @@ public class Startup
         app.UseSwagger();
         app.UseSwaggerUI(c =>
         {
-            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Minha API V1");
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Influp REST API");
         });
 
 

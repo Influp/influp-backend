@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Influp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+216cf38afd78bc6d373002489c2ce9831b43d235")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb79be5ea56d741fb9f5b16ed42d669798c7efcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Influp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Influp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
