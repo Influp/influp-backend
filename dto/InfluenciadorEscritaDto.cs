@@ -1,4 +1,4 @@
-public class InfluenciadorDTO
+public class InfluenciadorEscritaDTO
 {
     public string Nome { get; set; }
     public string Username { get; set; }
